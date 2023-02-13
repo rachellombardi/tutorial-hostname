@@ -1,4 +1,3 @@
-
 # Transfer the relevant input files to the job:
 executable = print-hostname.sh
 should_transfer_files = YES
