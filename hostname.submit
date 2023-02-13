@@ -1,0 +1,20 @@
+
+# Transfer the relevant input files to the job:
+executable = print-hostname.submit
+should_transfer_files = YES
+# transfer_input_files = 
+
+# We can specify unique filenames for each job by using
+#  the job's 'process' value.
+error = job.$(Process).error
+output = job.$(Process).output
+log = job.$(Process).log
+
+# The below are good base requirements for first testing jobs on OSG, 
+#  if you don't have a good idea of memory and disk usage.
+request_cpus = 1
+request_memory = 1 GB
+request_disk = 1 GB
+
+# Queue 100 jobs with the above specifications.
+queue 100
