@@ -1,6 +1,6 @@
 
 # Transfer the relevant input files to the job:
-executable = print-hostname.submit
+executable = print-hostname.sh
 should_transfer_files = YES
 # transfer_input_files = 
 
